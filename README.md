@@ -4,31 +4,84 @@
 
 🍦 アドレスバーで遊ぶための JS ライブラリ(アドレスバーとアイスクリームをもじった)
 
+https://www.npmjs.com/package/address-cream
+
+# Getting Started
+## Installation
+```
+npm i address-cream
+```
+or
+```
+yarn add address-cream
+```
+or
+```
+<script src="https://cdn.jsdelivr.net/npm/address-cream"></script>
+```
+
+## Usage
+
+### Vanila JS
+```
+<!DOCTYPE html>
+<html lang="ja">
+<!-- omit -->
+<script src="https://cdn.jsdelivr.net/npm/address-cream"></script>
+<!-- omit -->
+</head>
+<body>
+<!-- omit -->
+    <script>
+      addressCream.constant('寿司食べたい', 0.2);
+    </script>
+<!-- omit -->
+</body>
+</html>
+```
+
+### Next.js
+```
+import addressCream from 'address-cream';
+//omit
+ useEffect(() => {
+    addressCream.constant('寿司食べたい', 0.2);
+  });
+//omit
+```
+
+
+# Documentation
+
 ### 単調に増やしていく
 
 ```
-addressCream.constant("寿司食べたいかも", 0.2);
+addressCream.constant('寿司食べたいかも', 0.2);
 ```
+![address-cream-constant](https://user-images.githubusercontent.com/63891531/175817844-fd0369f4-4ecf-40df-8449-4a1f1ff32f81.gif)
+
 
 ### 単調に増やしていく+パーティクル
 
 ```
-addressCream.constant("寿司食べたい", 0.2, "✨", "🍣", 0.5);
+addressCream.constant('寿司食べたい', 0.2, '✨', '🍣', 0.5);
 ```
+![address-cream-constant-with-particle](https://user-images.githubusercontent.com/63891531/175817847-ffc69371-c3d0-4381-93c6-a6fe22ae832c.gif)
 
 ### 単調に増やして、単調に戻す
 
 ```
-addressCream.goBack("寿司食べたいかも？なんだ、気のせいか。", 0.2,0.1);
+addressCream.goBack('寿司食べたいかも……なんだ、気のせいか。', 0.2, 0.1);
 ```
+![address-cream-go-back](https://user-images.githubusercontent.com/63891531/175817851-880927c2-e7d4-4cf0-b4fc-a80d7163e139.gif)
 
 ### 電光掲示板みたいにする
 
 ```
-addressCream.goBack("途中の停車駅は、品川、名古屋、京都、新大阪、新神戸、岡山、小倉、博多です。",0.3,7);
+addressCream.flow('途中の停車駅は、品川、名古屋、京都、新大阪、新神戸、岡山、小倉、博多です。', 0.3, 7);
 ```
+![address-cream-flow](https://user-images.githubusercontent.com/63891531/175817858-edcf0156-751b-446e-a809-66053439a936.gif)
 
-![address-cream-demo](https://user-images.githubusercontent.com/63891531/175813979-61cbadf1-f00c-439f-a362-7f3ca9686098.gif)
 
 # テストの方法
 
