@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>examples</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">↑Look at the address bar!↑</h1>
+    <script type="module">
+      /**
+       * テストでの確認が無理ゲーなのでここで我慢する
+       */
+      import addressCream from "../src/index.js";
+      // await addressCream.constant("寿司食べたい", 0.2, "✨", "🍣", 0.5);
+      // await addressCream.sleep(2);
+      // await addressCream.reset();
+      // await addressCream.goBack("寿司食べたい!!", 0.3, 0.2);
+      // await addressCream.sleep(2);
+      // await addressCream.reset();
+      await addressCream.flow(
+        "途中の停車駅は、品川、名古屋、京都、新大阪、新神戸、岡山、小倉、博多です。",
+        0.3,
+        7
+      );
+      await addressCream.sleep(2);
+      await addressCream.reset();
+    </script>
+  </body>
+</html>
