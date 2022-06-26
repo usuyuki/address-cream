@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8" />
+	<title>Mocha Tests</title>
+	<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" /> <!-- テスト結果表示に使用されるCSS -->
+</head>
+<body>
+	<!-- テスト結果表示エリア -->
+	<div id="mocha"></div>
+
+	<!-- MochaとChai読み込み -->
+	<script src="https://unpkg.com/mocha/mocha.js"></script>
+	<script src="https://unpkg.com/chai/chai.js"></script>
+
+	<!-- Mocha設定 -->
+	<script class="mocha-init">
+		mocha.setup('bdd');
+		mocha.checkLeaks();
+	</script>
+
+	<!-- テスト対象モジュール、テストコード読み込み -->
+	<script src="../src/index.js"></script>
+	<script src="main.test.js"></script>
+
+	<!-- テスト実行 -->
+	<script class="mocha-exec">
+		mocha.run();
+	</script>
+</body>
+</html>
