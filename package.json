@@ -1,6 +1,6 @@
 {
   "name": "address-cream",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "JS library for playing in the address bar",
   "main": "src/index.js",
   "repository": "https://github.com/Usuyuki/address-cream",
