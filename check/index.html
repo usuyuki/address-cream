@@ -13,19 +13,14 @@
        * テストでの確認が無理ゲーなのでここで我慢する
        */
       import addressCream from "../src/index.js";
-      // await addressCream.constant("寿司食べたい", 0.2, "✨", "🍣", 0.5);
-      // await addressCream.sleep(2);
-      // await addressCream.reset();
-      // await addressCream.goBack("寿司食べたい!!", 0.3, 0.2);
-      // await addressCream.sleep(2);
-      // await addressCream.reset();
-      await addressCream.flow(
+      // addressCream.constant("寿司食べたいかも", 0.2);
+      // addressCream.constant("寿司食べたい", 0.2, "✨", "🍣", 0.5);
+      // addressCream.goBack("寿司食べたいかも……なんだ、気のせいか。", 0.2, 0.1);
+      addressCream.flow(
         "途中の停車駅は、品川、名古屋、京都、新大阪、新神戸、岡山、小倉、博多です。",
         0.3,
         7
       );
-      await addressCream.sleep(2);
-      await addressCream.reset();
     </script>
   </body>
 </html>

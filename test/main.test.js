@@ -13,7 +13,7 @@ describe("addressCream", async () => {
     let phrase = "寿司食べたい";
     let time = 1;
     try {
-      addressCream(phrase, time);
+      addressCream.constant(phrase, time);
       console.log("phrase:" + phrase);
       for (let i = 0; i <= phrase.length; i++) {
         console.log("a:" + location.hash);
