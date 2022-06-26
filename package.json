@@ -1,0 +1,13 @@
+{
+  "name": "address-cream",
+  "version": "0.0.1",
+  "description": "JS library for playing in the address bar",
+  "main": "src/index.js",
+  "repository": "https://github.com/Usuyuki/address-cream",
+  "author": "usuyuki",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}
