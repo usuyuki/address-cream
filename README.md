@@ -8,11 +8,16 @@
 addressCream(アドレスバーに出したい文字列,表示していく時間(秒))
 ```
 
+![address-cream-demo](https://user-images.githubusercontent.com/63891531/175813979-61cbadf1-f00c-439f-a362-7f3ca9686098.gif)
+
+
 # テストの方法
 
 ブラウザ上のやつを使う(location.系が cli でできないため)
 
 runner.html を開く → 結果が出る。以上
+
+ブラウザ無しで行ける系なら yarn test。
 
 # 参考記事
 
