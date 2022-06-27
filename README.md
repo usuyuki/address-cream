@@ -60,17 +60,19 @@ or
 ```
 <!DOCTYPE html>
 <html lang="ja">
-<!-- omit -->
-<script src="https://cdn.jsdelivr.net/npm/address-cream"></script>
-<!-- omit -->
-</head>
-<body>
-<!-- omit -->
+  <!-- omit -->
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/address-cream"></script>
+    <!-- omit -->
+  </head>
+  <body>
+    <!-- omit -->
     <script>
-      addressCream.constant('寿司食べたい', 0.2);
+      addressCream.constant("梅雨明けちゃった！", 0.2);
     </script>
-<!-- omit -->
-</body>
+    <!-- omit -->
+  </body>
 </html>
 ```
 
